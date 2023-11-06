@@ -20,6 +20,10 @@ class LargeDecimal {
   LargeDecimal operator + (const LargeDecimal& x) {return Add(*this, x);}
   LargeDecimal operator - (const LargeDecimal& x) {return Sub(*this, x);}
   LargeDecimal operator * (const LargeDecimal& x) {return Mult(*this, x);}
+//  bool operator > (const LargeDecimal& x) {return Compare(*this, x) > 0;}
+//  bool operator >= (const LargeDecimal& x) {return Compare(*this, x) >= 0;}
+//  bool operator < (const LargeDecimal& x) {return Compare(*this, x) < 0;}
+//  bool operator <= (const LargeDecimal& x) {return Compare(*this, x) <= 0;}
   static LargeDecimal Add(const LargeDecimal& x, const LargeDecimal& y);
   static LargeDecimal Sub(const LargeDecimal& x, const LargeDecimal& y);
   static LargeDecimal Mult(const LargeDecimal& x, const LargeDecimal& y);

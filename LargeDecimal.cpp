@@ -75,7 +75,7 @@ LargeDecimal LargeDecimal::Add(const LargeDecimal& x, const LargeDecimal& y)
 LargeDecimal LargeDecimal::Sub(const LargeDecimal& x, const LargeDecimal& y)
 {
   LargeDecimal result;
-  bool sign = (LargeDecimal::Compare(x, y) < 0);
+  bool sign = Compare(x, y) < 0;
   uint8_t d, borrow;
   int8_t a, b, tmp;
 
