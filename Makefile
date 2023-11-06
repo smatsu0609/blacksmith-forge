@@ -3,7 +3,7 @@ CFLAGS = -Wall -g
 
 TARGET = ldec
 
-SRCS = large_decimal.cpp
+SRCS = large_decimal.cpp LargeDecimal.cpp
 
 .PHONY: all clean $(TARGET)
 
