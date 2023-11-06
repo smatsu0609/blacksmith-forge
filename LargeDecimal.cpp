@@ -9,7 +9,7 @@ LargeDecimal::LargeDecimal(uint64_t val) {
 
 LargeDecimal::LargeDecimal(uint64_t hi, uint64_t lo) {
   char buf[32 + 1];
-  sprintf(buf, "%016llx%016llx", hi, lo);
+  sprintf(buf, "%016lx%016lx", hi, lo);
   this->SetHex(buf);
 }
 
